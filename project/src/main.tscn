@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bce7k4fdi6ub0"]
+
+[ext_resource type="Texture2D" uid="uid://rd35ktoxrjnj" path="res://assets/two-fighter-craft.jpeg" id="1_1m7hw"]
+[ext_resource type="AudioStream" uid="uid://cbsyqv20ptmaw" path="res://assets/615353__thehorsevalse__one-synth-challenge-pwm-malevolent-drum-and-bass.wav" id="2_yw0nr"]
+[ext_resource type="PackedScene" uid="uid://cfxbikl5bpj4w" path="res://src/main_menu.tscn" id="3_8mcr8"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="GameBackground" type="Sprite2D" parent="."]
+position = Vector2(961.567, 539)
+scale = Vector2(1.44, 1.44)
+texture = ExtResource("1_1m7hw")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_yw0nr")
+autoplay = true
+
+[node name="MainMenu" parent="." instance=ExtResource("3_8mcr8")]

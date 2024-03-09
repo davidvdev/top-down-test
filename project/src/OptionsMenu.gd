@@ -1,0 +1,20 @@
+extends CanvasLayer
+
+var MAIN = preload("res://src/main.tscn")
+var MAIN_MENU = preload("res://src/main_menu.tscn").instantiate()
+
+
+func _on_options_cancel_pressed():
+	return_to_main_menu()
+
+
+func _on_options_default_pressed():
+	pass # Replace with function body.
+
+
+func _on_options_accept_pressed():
+	return_to_main_menu()
+
+func return_to_main_menu():
+	get_tree().root.add_child(MAIN_MENU)
+	queue_free()
