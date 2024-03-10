@@ -2,16 +2,36 @@
 
 [node name="PlayerHUD" type="CanvasLayer"]
 
-[node name="StatusContainer" type="HBoxContainer" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="ScoreContainer" type="HBoxContainer" parent="."]
-anchors_preset = 1
-anchor_left = 1.0
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
 anchor_right = 1.0
-offset_left = -40.0
-offset_bottom = 40.0
-grow_horizontal = 0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StatusContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="HPTitle" type="Label" parent="MarginContainer/StatusContainer"]
+layout_mode = 2
+text = "HP:"
+
+[node name="HPLabel" type="Label" parent="MarginContainer/StatusContainer"]
+layout_mode = 2
+text = "100"
+
+[node name="ScoreContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
+
+[node name="ScoreTitle" type="Label" parent="MarginContainer/ScoreContainer"]
+layout_mode = 2
+text = "Score:"
+
+[node name="ScoreLabel" type="Label" parent="MarginContainer/ScoreContainer"]
+layout_mode = 2
+text = "00000"
+horizontal_alignment = 2
