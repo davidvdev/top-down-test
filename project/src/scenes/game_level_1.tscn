@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://46kuewtc51yx"]
+[gd_scene load_steps=5 format=3 uid="uid://46kuewtc51yx"]
 
 [ext_resource type="Script" path="res://src/scripts/game_level_1.gd" id="1_00uhb"]
 [ext_resource type="Texture2D" uid="uid://bw6vlcqwoq6iu" path="res://assets/Irish_RC8_LHaRGB.png" id="2_le81k"]
 [ext_resource type="AudioStream" uid="uid://d0hcpoe7nw78l" path="res://assets/693897__thehorsevalse__session-recall-melodic-techno-loop.wav" id="3_ndar2"]
+[ext_resource type="PackedScene" uid="uid://cx6km5vcmhey0" path="res://src/scenes/player_hud.tscn" id="4_rbcnx"]
 
 [node name="game_level_1" type="Node2D"]
 script = ExtResource("1_00uhb")
@@ -17,3 +18,5 @@ texture = ExtResource("2_le81k")
 [node name="LevelOneMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_ndar2")
 autoplay = true
+
+[node name="PlayerHUD" parent="." instance=ExtResource("4_rbcnx")]
