@@ -1,5 +1,5 @@
 extends CanvasLayer
-const GAME = preload("res://src/scenes/game_level_1.tscn")
+const GAME = preload("res://src/scenes/game.tscn")
 
 func _on_menu_play_pressed():
 	get_tree().change_scene_to_packed(GAME)
