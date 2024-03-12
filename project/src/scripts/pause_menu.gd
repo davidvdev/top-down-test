@@ -16,8 +16,8 @@ func _on_pause_continue_pressed():
 
 func _on_pause_options_pressed():
 	var OPTIONS_MENU = load("res://src/scenes/options_menu.tscn").instantiate()
-	get_tree().root.add_child(OPTIONS_MENU)
-	queue_free()
+	$".".add_child(OPTIONS_MENU)
+	hide()
 
 func _on_pause_quit_pressed():
 	return_to_main_menu()
@@ -31,3 +31,8 @@ func return_to_main_menu():
 func continue_game():
 	get_tree().paused = false
 	hide()
+
+
+func _on_child_exiting_tree(node):
+	if node.name == 'OptionsMenu':
+		show()

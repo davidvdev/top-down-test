@@ -75,6 +75,7 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_vertical = 3
 
+[connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/OptionsCancel" to="." method="_on_menu_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/OptionsCancel" to="." method="_on_options_cancel_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/OptionsDefault" to="." method="_on_menu_play_pressed"]
