@@ -17,3 +17,6 @@ mono_crash.*.json
 
 # Backup files
 *mmpz.bak
+
+# VS Code related
+.vscode/

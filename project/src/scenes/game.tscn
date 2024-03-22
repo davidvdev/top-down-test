@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://46kuewtc51yx"]
 
 [ext_resource type="Script" path="res://src/scripts/game.gd" id="1_l3uc6"]
-[ext_resource type="Texture2D" uid="uid://bw6vlcqwoq6iu" path="res://assets/Irish_RC8_LHaRGB.png" id="2_wpilh"]
+[ext_resource type="Texture2D" uid="uid://bw6vlcqwoq6iu" path="res://assets/BackgroundStars.png" id="2_wpilh"]
 [ext_resource type="AudioStream" uid="uid://d0hcpoe7nw78l" path="res://assets/693897__thehorsevalse__session-recall-melodic-techno-loop.wav" id="3_7uli4"]
 [ext_resource type="PackedScene" uid="uid://cx6km5vcmhey0" path="res://src/scenes/player_hud.tscn" id="4_t01a1"]
 [ext_resource type="PackedScene" uid="uid://bh825e1xcy0ip" path="res://src/scenes/pause_menu.tscn" id="5_dpxnv"]
