@@ -80,5 +80,5 @@ size_flags_vertical = 3
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/OptionsCancel" to="." method="_on_options_cancel_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/OptionsDefault" to="." method="_on_menu_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/OptionsDefault" to="." method="_on_options_default_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/OptionsAccept" to="." method="_on_menu_quit_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/OptionsAccept" to="." method="_on_options_accept_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/OptionsAccept" to="." method="_on_menu_quit_pressed"]
